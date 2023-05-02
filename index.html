@@ -48,7 +48,12 @@ ul{padding:0 0 5px 5px;list-style:none}li{line-height:16px}
 			document.getElementById("myOverlay").style.display = "none";
 		};
 		
-		function search() {
+		function baidusearch() {
+			var sValue = document.getElementById("sValue").value;
+			window.open("https://www.baidu.com/s?wd=" + sValue + "");
+		};
+
+		function googlesearch() {
 			var sValue = document.getElementById("sValue").value;
 			window.open("https://www.google.com/search?q=" + sValue + "");
 		};
@@ -86,7 +91,8 @@ ul{padding:0 0 5px 5px;list-style:none}li{line-height:16px}
 		<!-- Sidebar Search bar -->
 		<div>
 			<input type="text" id="sValue" style="width:95%" ><br>
-			<button id="searchBtn" onclick="search()" >  &nbsp; Google &nbsp;</button>
+			<button id="searchBtn" onclick="googlesearch()" >  &nbsp; Google &nbsp;</button>
+			<button id="searchBtn" onclick="baidusearch()" >  &nbsp; 百度一下 &nbsp;</button>
 		</div>
 
 		<script>
