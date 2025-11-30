@@ -314,3 +314,9 @@ ul{
 	text-align:center;
 	padding:10px;
 }
+
+/* adjust layout of full size icon */
+.fullIcon{
+	padding: 8px;
+	border-radius: 25%;
+}
