@@ -14,8 +14,8 @@ function showTime() {
   min = (min < 10) ? "0" + min : min;
   sec = (sec < 10) ? "0" + sec : sec;
   
-  // var time = hr + ":" + min + ":" + sec + " " + session;
-  var time = session + " " + hr + ":" + min;
+  var time = hr + ":" + min + session;
+  // var time = session + " " + hr + ":" + min;
   
   var clock = document.querySelector('#clock');
   clock.innerText = time;
