@@ -15,7 +15,7 @@ body {
 #clock {
   color: #d4653d;
   font-family: Arial Narrow;
-  font-size: 60px;
-  font-weight: bold;
+  font-size: 50px;
+  /* font-weight: bold; */
   /*font-variant-numeric: tabular-nums;*/
 }
